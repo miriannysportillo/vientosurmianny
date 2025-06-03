@@ -4,6 +4,7 @@ import MainLayout from './components/layout/MainLayout';
 import LoadingSpinner from './components/ui/LoadingSpinner';
 import { useAuthStore } from './store/authStore';
 import ProfilePageWithId from './pages/ProfilePageWithId';
+import MessengerWrapper from './pages/MessengerPage';
 
 // Lazy loaded components
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -71,6 +72,7 @@ const AppRoutes = () => {
           <Route path="blogs/:id" element={<BlogDetailPage />} />
           <Route path="eventos/:id" element={<CulturalEventDetailPage />} />
           <Route path="cumpleanos/:id" element={<CumpleanosDetailPage />} />
+          <Route path="mensajes/*" element={<Suspense fallback={<LoadingSpinner fullScreen />}><MessengerWrapper /></Suspense>} />
         </Route>
         
         <Route path="*" element={<NotFoundPage />} />

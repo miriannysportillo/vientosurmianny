@@ -19,7 +19,7 @@ const BottomNavigation: React.FC = () => {
   return (
     <nav className="fixed bottom-0 left-0 right-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 z-30">
       <div className="container mx-auto max-w-2xl">
-        <div className="grid grid-cols-5 items-center h-16">
+        <div className="grid grid-cols-6 items-center h-16">
           {navItems.map(({ path, icon: Icon, label }) => {
             const isActive = location.pathname === path;
             return (

@@ -26,8 +26,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       isLoading,
       login,
       register,
-      logout,
-      checkAuth
+      logout
     }}>
       {children}
     </AuthContext.Provider>
@@ -41,3 +40,5 @@ export const useAuth = () => {
   }
   return context;
 };
+
+export { AuthContext };
