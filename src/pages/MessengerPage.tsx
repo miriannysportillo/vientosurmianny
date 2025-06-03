@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
-import { AuthProvider as MensajeriaAuthProvider } from '../../mensajeria-main/src/contexts/AuthContext';
-import '../../mensajeria-main/src/index.css';
+import { AuthProvider as MensajeriaAuthProvider } from '../contexts/AuthContext.mensajeria';
+import '../index.mensajeria.css';
 
 const Messenger = lazy(() => import('./MessengerProxy'));
 
