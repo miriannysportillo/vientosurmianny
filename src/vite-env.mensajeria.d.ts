@@ -1,2 +1,1 @@
-// Copiado desde mensajeria-main/src/vite-env.d.ts
-// ...código original aquí...
+/// <reference types="vite/client" />

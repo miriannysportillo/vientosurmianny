@@ -1,2 +1,1 @@
-// Copiado desde mensajeria-main/src/setupTests.ts
-// ...código original aquí...
+import '@testing-library/jest-dom';
