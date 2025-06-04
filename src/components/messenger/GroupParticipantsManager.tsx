@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useMessageStore } from '../../store/messageStore';
 import { useParams } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext.mensajeria';
 
 const GroupParticipantsManager: React.FC = () => {
   const { conversationId } = useParams<{ conversationId: string }>();

@@ -4,7 +4,7 @@ import { Conversation, useMessageStore } from '../../store/messageStore';
 import { Search, Plus, MessageSquare } from 'lucide-react';
 import ConversationItem from './ConversationItem';
 import NewConversationModal from './NewConversationModal';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext.mensajeria';
 
 const ConversationList: React.FC = () => {
   const { user } = useAuth();
